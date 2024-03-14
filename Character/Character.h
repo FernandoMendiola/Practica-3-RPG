@@ -16,6 +16,9 @@ protected:
     int defense;
     int speed;
     bool isPlayer;
+    int maxdefense;
+    int maxhealth;
+
 public:
     Character(string _name, int _health, int _attack, int _defense, int _speed, bool _isPlayer);
 
@@ -24,7 +27,6 @@ public:
 
     //TODO: Implementar metodo de defensa
     //Incrementar la defensa un 20% solo por el turno actual
-    void defend();
 
     bool flee(Character* target);
     string getName();
@@ -33,6 +35,11 @@ public:
     int getDefense();
     bool getIsPlayer();
     int getSpeed();
+
+    void defend();
+    int getMaxhealth();
+    int getMaxdefense();
+    void desDefense();
     string toString();
 };
 

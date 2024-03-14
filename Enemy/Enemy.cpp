@@ -46,14 +46,27 @@ Character* Enemy::selectTarget(vector<Player*> possibleTargets) {
 }
 
 Action Enemy::takeAction(vector<Player*> partyMembers) {
+    int chance = 1+rand()%(101-1);
     Action currentAction;
-    currentAction.speed = getSpeed();
 
-    Character* target = selectTarget(partyMembers);
-    currentAction.target = target;
-    currentAction.action = [this, target](){
-        doAttack(target);
-    };
 
+    desDefense();
+
+
+    if(getHealth() < getMaxhealth() * .55 && chance <= 70){
+        currentAction.action = [this]() {
+            defend();
+        };
+        currentAction.speed = 999999;
+
+    } else {
+        Character* target = selectTarget(partyMembers);
+        currentAction.target = target;
+        currentAction.action = [this, target](){
+            doAttack(target);
+        };
+        currentAction.speed = getSpeed();
+
+    }
     return currentAction;
 }

@@ -94,17 +94,18 @@ void Combat::doCombat() {
 }
 
 void Combat::executeActions(vector<Character*>::iterator participant) {
-    while(!actionQueue.empty()) {
+    while (!actionQueue.empty()) {
         Action currentAction = actionQueue.top();
         currentAction.action();
         actionQueue.pop();
 
         //Check if there are any dead characters
-        checkParticipantStatus(*participant);
-        checkParticipantStatus(currentAction.target);
+        if (currentAction.target != NULL) {
+            checkParticipantStatus(*participant);
+            checkParticipantStatus(currentAction.target);
+        }
     }
 }
-
 void Combat::checkParticipantStatus(Character *participant) {
     if(participant->getHealth() <= 0) {
         if(participant->getIsPlayer()) {
@@ -115,6 +116,7 @@ void Combat::checkParticipantStatus(Character *participant) {
         participants.erase(remove(participants.begin(), participants.end(), participant), participants.end());
     }
 }
+
 
 void Combat::registerActions(vector<Character*>::iterator participantIterator) {
     //Este while representa el turno de cada participante
