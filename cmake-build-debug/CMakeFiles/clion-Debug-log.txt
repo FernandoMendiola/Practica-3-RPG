@@ -1,4 +1,4 @@
-"C:\Users\Usuario\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Usuario\Desktop\RPGProyectoFinal\2P-RPG -B C:\Users\Usuario\Desktop\RPGProyectoFinal\2P-RPG\cmake-build-debug
+"C:\Users\Usuario\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Usuario\Desktop\Practicas-RPG -B C:\Users\Usuario\Desktop\Practicas-RPG\cmake-build-debug
 CMake Deprecation Warning:
   Support for "Extra Generators" like
 
@@ -20,6 +20,6 @@ CMake Deprecation Warning:
 -- Check for working CXX compiler: C:/Users/Usuario/AppData/Local/JetBrains/CLion 2023.3.4/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (9.6s)
+-- Configuring done (18.6s)
 -- Generating done (0.2s)
--- Build files have been written to: C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG/cmake-build-debug
+-- Build files have been written to: C:/Users/Usuario/Desktop/Practicas-RPG/cmake-build-debug

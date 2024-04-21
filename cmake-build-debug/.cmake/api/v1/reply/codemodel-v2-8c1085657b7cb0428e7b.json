@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG/cmake-build-debug",
-		"source" : "C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG"
+		"build" : "C:/Users/Usuario/Desktop/Practicas-RPG/cmake-build-debug",
+		"source" : "C:/Users/Usuario/Desktop/Practicas-RPG"
 	},
 	"version" : 
 	{

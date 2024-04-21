@@ -52,11 +52,10 @@ void Combat::combatPrep() {
 
 string Combat::toString() {
     string result = "";
-    vector<Character*>::iterator it;
-    for(it = participants.begin(); it != participants.end(); it++){
-        result += (*it)->toString() + "\n";
+    for (auto it = participants.begin(); it != participants.end(); it++){
+        result += string((*it)->toString()) + "\n";
     }
-    cout<<"===================="<<endl;
+    cout << "====================" << endl;
     return result;
 }
 

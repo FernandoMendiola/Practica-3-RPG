@@ -1,6 +1,6 @@
 CMakeFiles/rpg.dir/Combat/Combat.cpp.obj: \
- C:\Users\Usuario\Desktop\RPGProyectoFinal\2P-RPG\Combat\Combat.cpp \
- C:\Users\Usuario\Desktop\RPGProyectoFinal\2P-RPG\Combat\Combat.h \
+ C:\Users\Usuario\Desktop\Practicas-RPG\Combat\Combat.cpp \
+ C:\Users\Usuario\Desktop\Practicas-RPG\Combat\Combat.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -61,7 +61,49 @@ CMakeFiles/rpg.dir/Combat/Combat.cpp.obj: \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
- C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG/Character/Character.h \
+ C:/Users/Usuario/Desktop/Practicas-RPG/Character/Character.h \
+ C:/Users/Usuario/Desktop/Practicas-RPG/Player/Player.h \
+ C:/Users/Usuario/Desktop/Practicas-RPG/Character/Character.h \
+ C:/Users/Usuario/Desktop/Practicas-RPG/Enemy/Enemy.h \
+ C:/Users/Usuario/Desktop/Practicas-RPG/Character/Character.h \
+ C:/Users/Usuario/Desktop/Practicas-RPG/Combat/Action.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+ C:/Users/Usuario/Desktop/Practicas-RPG/Character/Character.h \
+ C:/Users/Usuario/Desktop/Practicas-RPG/Combat/Action.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
+ C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
@@ -69,7 +111,6 @@ CMakeFiles/rpg.dir/Combat/Combat.cpp.obj: \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
@@ -89,51 +130,11 @@ CMakeFiles/rpg.dir/Combat/Combat.cpp.obj: \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/limits.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
- C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG/Player/Player.h \
- C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG/Character/Character.h \
- C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG/Enemy/Enemy.h \
- C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG/Character/Character.h \
- C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG/Combat/Action.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
- C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG/Character/Character.h \
- C:/Users/Usuario/Desktop/RPGProyectoFinal/2P-RPG/Combat/Action.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
- C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h \
+ C:/Users/Usuario/Desktop/Practicas-RPG/Combat/Action.h \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
  C:/Users/Usuario/AppData/Local/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \

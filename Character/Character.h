@@ -1,16 +1,9 @@
-//
-// Created by Victor Navarro on 15/02/24.
-//
-
 #ifndef RPG_CHARACTER_H
 #define RPG_CHARACTER_H
-#include <string>
-
-using namespace std;
 
 class Character {
 protected:
-    string name;
+    char name[30]{}; // Cambiado a char array para almacenar nombres de hasta 29 caracteres más el carácter nulo terminador
     int health;
     int attack;
     int defense;
@@ -20,8 +13,7 @@ protected:
     int maxhealth;
 
 public:
-    Character(string _name, int _health, int _attack, int _defense, int _speed, bool _isPlayer);
-
+    Character(const char *_name, int _health, int _attack, int _defense, int _speed, int _level, int _experience, bool _isPlayer);
     virtual void doAttack(Character *target) = 0;
     virtual void takeDamage(int damage) = 0;
 
@@ -29,7 +21,7 @@ public:
     //Incrementar la defensa un 20% solo por el turno actual
 
     bool flee(Character* target);
-    string getName();
+    char* getName();
     int getHealth();
     int getAttack();
     int getDefense();
@@ -40,8 +32,7 @@ public:
     int getMaxhealth();
     int getMaxdefense();
     void desDefense();
-    string toString();
+    char* toString();
 };
 
-
-#endif //RPG_CHARACTER_H
+#endif // RPG_CHARACTER_H

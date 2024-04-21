@@ -9,6 +9,8 @@
 #include "../Player/Player.h"
 #include "../Enemy/Enemy.h"
 #include <queue>
+#include <string>
+#include "../Combat/Action.h"
 
 class Combat {
 private:
@@ -28,7 +30,7 @@ public:
     Combat();
     void doCombat();
     void addParticipant(Character *participant);
-    string toString();
+    std::string toString();
 };
 
 
