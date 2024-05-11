@@ -8,6 +8,6 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
--- Configuring done (7.9s)
--- Generating done (1.0s)
+-- Configuring done (4.6s)
+-- Generating done (0.8s)
 -- Build files have been written to: C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/cmake-build-debug

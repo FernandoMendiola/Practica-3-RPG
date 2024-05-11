@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/Combat/Action.cpp" "CMakeFiles/rpg.dir/Combat/Action.cpp.obj" "gcc" "CMakeFiles/rpg.dir/Combat/Action.cpp.obj.d"
   "C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/Combat/Combat.cpp" "CMakeFiles/rpg.dir/Combat/Combat.cpp.obj" "gcc" "CMakeFiles/rpg.dir/Combat/Combat.cpp.obj.d"
   "C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/Enemy/Enemy.cpp" "CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj" "gcc" "CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj.d"
+  "C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/Files/FileHandler.cpp" "CMakeFiles/rpg.dir/Files/FileHandler.cpp.obj" "gcc" "CMakeFiles/rpg.dir/Files/FileHandler.cpp.obj.d"
   "C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/Player/Player.cpp" "CMakeFiles/rpg.dir/Player/Player.cpp.obj" "gcc" "CMakeFiles/rpg.dir/Player/Player.cpp.obj.d"
   "C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/main.cpp" "CMakeFiles/rpg.dir/main.cpp.obj" "gcc" "CMakeFiles/rpg.dir/main.cpp.obj.d"
   )

@@ -17,11 +17,14 @@ class Player: public Character {
 private:
     int level;
     int experience;
-    int expnecesaria;
     int originalhealth;
     int originaldefense;
-public:
+    int expnecesaria;
+    void levelUp();
+    void saveProgress();
 
+public:
+    Player(const char* _name, int _health, int originalhealth, int _attack, int _defense, int _originaldefense, int _speed, int _level, int _experience);
     Player(const char* _name, int _health, int _attack, int _defense, int _speed,
            int _level, int _experience, int _expnecesaria, int originalhealth, int originaldefense);
     void doAttack(Character *target) override;
@@ -30,7 +33,15 @@ public:
     Action takeAction(vector<Enemy*> enemies);
 
     void gainExperience(int exp);
-    void levelUp();
-    int getLevel() const;};    //TODO: Implement use object
+    int getLevel() const;    //TODO: Implement use object
+
+    char* serialize();
+    static Player* unserialize(char* buffer);
+
+    static const unsigned int BUFFER_SIZE = sizeof(name) + sizeof (health) + sizeof(originalhealth) + sizeof(attack) + sizeof(defense) + sizeof(originaldefense) + sizeof(speed) + sizeof(isPlayer) + sizeof(level) + sizeof(experience);
+
+private:
+char buffer[Player::BUFFER_SIZE];
+};
 
 #endif //RPG_PLAYER_H

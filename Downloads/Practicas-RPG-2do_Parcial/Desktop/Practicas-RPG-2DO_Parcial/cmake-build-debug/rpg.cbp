@@ -106,6 +106,12 @@
 		<Unit filename="C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/Enemy/Enemy.h">
 			<Option target="rpg"/>
 		</Unit>
+		<Unit filename="C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/Files/FileHandler.cpp">
+			<Option target="rpg"/>
+		</Unit>
+		<Unit filename="C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/Files/FileHandler.h">
+			<Option target="rpg"/>
+		</Unit>
 		<Unit filename="C:/Users/Usuario/Downloads/Practicas-RPG-2do_Parcial/Desktop/Practicas-RPG-2DO_Parcial/Player/Player.cpp">
 			<Option target="rpg"/>
 		</Unit>

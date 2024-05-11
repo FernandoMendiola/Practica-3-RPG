@@ -1,11 +1,32 @@
 #include "Player.h"
 #include <iostream>
-
+#include "../Files/FileHandler.h"
+#include <cstring>
 using namespace std;
+
+void Player::saveProgress() {
+    const char* buffer = this->serialize();
+
+    // Copiar la cadena constante a un búfer mutable
+    char mutableBuffer[Player::BUFFER_SIZE];
+    strncpy(mutableBuffer, buffer, Player::BUFFER_SIZE);
+
+    FileHandler fileHandler;
+    fileHandler.writeToFile("PlayerInfo.data", const_cast<char*>(mutableBuffer), Player::BUFFER_SIZE);
+
+    cout << "\n\tProgreso guardado !" << endl
+         << "Stats:" << endl
+         << this->toString() << endl;
+}
+Player::Player(const char* _name, int _health, int originalhealth, int _attack, int _defense, int _originaldefense, int _speed, int _level, int _experience): Character(_name, _health, _attack, _defense, _speed, _level, _experience, true) {
+
+    level = 1;
+    experience = 0;
+}
 
 Player::Player(const char* _name, int _health, int _attack, int _defense, int _speed,int _level, int _experience, int _expnecesaria, int _originalhealth, int _originaldefense)
         : Character(_name, _health, _attack, _defense, _speed, _level, _experience, true) {
-    level = 1;
+    level = _level;
     experience = 0;
     expnecesaria = 100;
     originalhealth = _originalhealth;
@@ -107,7 +128,8 @@ Action Player::takeAction(vector<Enemy*> enemies) {
     int action = 0;
     cout << "Select an action: " << endl
          << "1. Attack" << endl
-         << "2. Defend" << endl;
+         << "2. Defend" << endl
+         << "3. Save Progress" << endl; // Nueva opción para guardar progreso
 
     //TODO: Validate input
     cin >> action;
@@ -121,9 +143,9 @@ Action Player::takeAction(vector<Enemy*> enemies) {
             currentAction.target = target;
             currentAction.action = [this, target, enemies](){ // Captura la variable 'enemies' aquí
                 doAttack(target);
-                if(target->getHealth()<=0){
-                    Enemy* enemigo = ((Enemy*)target);
-                    if(enemigo->getExperience() + experience >= 100){
+                if(target->getHealth() <= 0) {
+                    Enemy* enemigo = dynamic_cast<Enemy*>(target);
+                    if(enemigo && (enemigo->getExperience() + experience >= 100)) {
                         for (int i = 0; i < enemies.size(); i++) {
                             if(enemies[i]->getId() != enemigo->getId() && enemies.size() > 1) {
                                 enemies[i]->UpAttack(1);
@@ -141,10 +163,87 @@ Action Player::takeAction(vector<Enemy*> enemies) {
             };
             currentAction.speed = 9999999;
             break;
+        case 3:
+            saveProgress();
+            return takeAction(enemies);
         default:
             cout << "Invalid action" << endl;
-            break;
+            return takeAction(enemies);
     }
 
     return currentAction;
+}
+
+char* Player::serialize() {
+    char* iterator = buffer;
+
+    memcpy(iterator, &name, sizeof(name));
+    iterator += sizeof(name);
+
+    memcpy(iterator, &health, sizeof(health));
+    iterator += sizeof(health);
+
+    memcpy(iterator, &attack, sizeof(attack));
+    iterator += sizeof(attack);
+
+    memcpy(iterator, &originalhealth, sizeof(originalhealth));
+    iterator += sizeof(originalhealth);
+
+    memcpy(iterator, &defense, sizeof(defense));
+    iterator += sizeof(defense);
+
+    memcpy(iterator, &originaldefense, sizeof(originaldefense));
+    iterator += sizeof(originaldefense);
+
+    memcpy(iterator,&speed , sizeof(speed));
+    iterator += sizeof(speed);
+
+    memcpy(iterator, &isPlayer, sizeof(isPlayer));
+    iterator += sizeof(isPlayer);
+
+    memcpy(iterator, &level, sizeof(level));
+    iterator += sizeof(level);
+
+    memcpy(iterator, &experience, sizeof(experience));
+
+    return buffer;
+}
+
+Player* Player::unserialize(char* buffer) {
+    char* iterator = buffer;
+    char name[30];
+    int health, attack, originalhealth, defense, originaldefense, speed, level, experience;
+    bool isPlayer;
+
+    memcpy(&name, iterator, sizeof(name));
+    iterator+=sizeof(name);
+
+    memcpy(&health, iterator, sizeof(health));
+    iterator+=sizeof(health);
+
+    memcpy(&attack, iterator, sizeof(attack));
+    iterator+=sizeof(attack);
+
+    memcpy(&originalhealth, iterator, sizeof(originalhealth));
+    iterator+=sizeof(originalhealth);
+
+    memcpy(&defense, iterator, sizeof(defense));
+    iterator+=sizeof(defense);
+
+    memcpy(&originaldefense, iterator, sizeof(originaldefense));
+    iterator+=sizeof(originaldefense);
+
+    memcpy(&speed, iterator, sizeof(speed));
+    iterator+=sizeof(speed);
+
+    memcpy(&isPlayer, iterator, sizeof(isPlayer));
+    iterator+=sizeof(isPlayer);
+
+    memcpy(&level, iterator, sizeof(level));
+    iterator += sizeof(level);
+
+    memcpy(&experience, iterator, sizeof(experience));
+    iterator += sizeof(experience);
+
+    return new Player(name, health, originalhealth, attack, defense, originaldefense, speed, level, experience);
 }

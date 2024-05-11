@@ -4,10 +4,10 @@
 
 #include "Character.h"
 #include <iostream>
-#include <cstring> // Para strcpy
-#include <cstdio> // Para sprintf
+#include <string.h>
 
 using namespace std;
+
 
 Character::Character(const char *_name, int _health, int _attack, int _defense, int _speed, int _level, int _experience, bool _isPlayer) {
     strcpy(name, _name);
